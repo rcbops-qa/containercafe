@@ -18,6 +18,10 @@ import commands
 
 
 class LocalHostClient(object):
+    """ This is a client for the host of the container"""
 
-    def execute(cmd):
-        return commands.getoutput(cmd=cmd)
+    def execute(self, command):
+        return commands.getoutput(cmd=command)
+
+    def status_execute(self, command):
+        return commands.getstatusoutput(cmd=command)

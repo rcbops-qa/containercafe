@@ -20,6 +20,8 @@ class UnrecognizedState(Exception):
 
 
 class State(object):
+    """ Current state of a container """
+
     INITIAL = 0
     CREATED = 1
     STARTED = 2
