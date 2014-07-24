@@ -37,16 +37,12 @@ ContainerCAFE can be [installed with pip](https://pypi.python.org/pypi/pip) from
 
 Configuration
 --------------
-ContainerCAFE works in tandem with the [Open CAFE Core](https://github.com/stackforge) cafe-runner. This installation of CloudCAFE includes a reference
-configuration for each of the CloudCAFE supported OpenStack products. Configurations will be installed to: <USER_HOME>/.opencafe/configs/<PRODUCT>
+ContainerCAFE works in tandem with the [Open CAFE Core](https://github.com/stackforge) cafe-runner.
 
-To use ContainerCAFE you **will need to create/install your own configurations** based on the reference configs pointing to your deployment of OpenStack.
+To use ContainerCAFE you **will need to create/install your own configurations** based on the reference configs pointing to your containers and their hosts
 
-At this stage you will have the Open CAFE Core engine and the CloudCAFE Framework implementation. From this point you are ready to:
-1) Write entirely new tests using the CloudCAFE Framework
-					or
-2) Install the [CloudRoast Test Repository](https://github.com/stackforge), an Open Source body of OpenStack automated tests written with CloudCAFE
-that can be executed or extended. You can also install the ContainersRoast Test Repository, which are the automated tests writeen for ContainersCAFE that can be executed or extended.
+At this stage you will have the Open CAFE Core engine. From this point you are ready to:
+1) Write entirely new tests using the OpenCafe Framework
 
 Logging
 -------

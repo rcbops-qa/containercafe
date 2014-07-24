@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 """
 
-from cloudcafe.common.models.configuration import ConfigSectionInterface
+from cafe.engine.models.data_interfaces import ConfigSectionInterface
 
 
 class ContainersSetupConfig(ConfigSectionInterface):
