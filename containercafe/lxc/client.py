@@ -31,7 +31,7 @@ class LXCError(Exception):
     pass
 
 
-class LxcContainer(BaseContainerClient):
+class LxcClient(BaseContainerClient):
 
     CREATE_CMD = 'lxc-create'
     START_CMD = 'lxc-start'
@@ -44,7 +44,7 @@ class LxcContainer(BaseContainerClient):
     RUNNING = 'RUNNING'
 
     def __init__(self, name, preset_cfg=None, connection=None, clean=True):
-        super(LxcContainer, self).__init__(name=name, connection=connection)
+        super(LxcClient, self).__init__(name=name, connection=connection)
         self._syscall_whitelist = list()
         self._config = self._init_config(preset_cfg)
         self._tmpdir_path = self._init_tmpdir()
