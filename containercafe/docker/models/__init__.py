@@ -13,15 +13,3 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 """
-
-import commands
-
-
-class LocalHostClient(object):
-    """ This is a client for the host of the container"""
-
-    def execute(self, command):
-        return commands.getoutput(cmd=command)
-
-    def status_execute(self, command):
-        return commands.getstatusoutput(cmd=command)
