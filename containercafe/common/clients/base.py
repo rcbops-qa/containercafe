@@ -15,7 +15,7 @@ limitations under the License.
 """
 
 import os
-from containercafe.common.states import State
+from ..states import State
 
 
 class BaseContainerClient(object):
