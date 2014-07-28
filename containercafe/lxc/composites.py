@@ -14,8 +14,8 @@ See the License for the specific language governing permissions and
 limitations under the License.
 """
 
-from containercafe.lxc.client import LxcClient
-from containercafe.common.config import ContainersSetupConfig
+from .client import LxcClient
+from ..common.config import ContainersSetupConfig
 
 
 class BaseLxcComposite(object):

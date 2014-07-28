@@ -20,8 +20,8 @@ Purpose: Given a container technology (LXC, libContainer) and a connection type
 """
 
 # Containers
-from containercafe.lxc.client import LxcContainer
-from containercafe.clients.host import HostContainerClient
+from ..clients.host import HostContainerClient
+from ...lxc.client import LxcContainer
 
 # Connections
 from cafe.engine.ssh.client import BaseSSHClient
